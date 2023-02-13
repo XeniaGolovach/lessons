@@ -1,0 +1,145 @@
+@import url("reset.css");
+@import url(https://fonts.googleapis.com/css?family=Poppins:300,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap);
+
+[class*="__container"] {
+   max-width: 1240px;
+   margin: 0 auto;
+   padding-left: 20px;
+   padding-right: 20px;
+}
+
+.logo__container {
+   padding-top: 36px;
+   height: 25px;
+}
+.background_container {
+   background: url("../img/unsplash_WgMDQsn36w4.jpg") center / cover no-repeat;
+   max-width: 100%;
+}
+.text__container {
+   font-family: "Poppins";
+   color: #f8f9fa;
+   margin-top: 269px;
+   padding-bottom: 100px;
+}
+.text__container p {
+   font-size: 12px;
+   font-weight: 300;
+   line-height: 20px;
+   color: #e5e5e5;
+}
+
+.text__container h2 {
+   font-size: 25px;
+   font-weight: 700;
+   line-height: 40px;
+   margin-top: 15px;
+   margin-bottom: 15px;
+}
+
+.background_container2 {
+   padding-top: 100px;
+   background: linear-gradient(to right, #decba4, #3e5151);
+}
+
+.list__container {
+   font-family: "Inter", Arial;
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 15px;
+   color: #637381;
+}
+.list__container h2 {
+   color: #212b36;
+   font-weight: 400;
+   font-size: 26px;
+   line-height: 28px;
+   padding-bottom: 45px;
+}
+.list__container ul {
+   padding-bottom: 60px;
+}
+
+.list__container li {
+   /* margin-bottom: 18px; */
+   min-height: 10px;
+   padding-bottom: 18px;
+}
+
+.first-list li {
+   padding-left: 20px;
+   background: url("..//img/icons/Ellipse.svg") 0 5px / 8px no-repeat;
+}
+.second-list li,
+.third-list li,
+.fourth-list li,
+.fifth-list li,
+.sixth-list li {
+   padding-left: 30px;
+   padding-top: 5px;
+}
+
+.second-list li {
+   background: url("..//img/icons/checkmark-circle.svg") 0 5px / 20px no-repeat;
+}
+.third-list li {
+   background: url("../img/icons/checkmark-circle-green.svg") 0 5px / 20px no-repeat;
+}
+
+.fourth-list li {
+   background: url("../img/icons/cross-circle.svg") 0 5px / 20px no-repeat;
+}
+.fifth-list li {
+   background: url("../img/icons/arrow-right.svg") 0 5px / 20px no-repeat;
+}
+.sixth-list li {
+   background: url("../img/icons/star.svg") 0 5px / 20px no-repeat;
+}
+
+
+.bg_speaker{
+   background: url("../img/Hero-Area-bg.jpg") center / cover no-repeat;
+   max-width: 100%;
+}
+
+.speaker__container {
+   font-family: "Inter";
+   font-size: 16px;
+   font-weight: 500;
+   background: url("../img/speaker\ 1.jpg") 700px 81px / 272px 396px no-repeat;
+   min-height: 560px;
+   
+
+}
+
+.speaker__container h4{
+   padding-top:145px ;
+   color: #3056D3;
+   font-weight: 600;
+   font-size: 18px;
+   line-height: 24px;
+}
+.speaker__container h2{
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 45px;
+   margin: 15px 0;
+   color: #212B36;
+
+}
+
+.speaker__container p{
+   color: #637381;
+   line-height: 24px;
+   max-width:570px ;
+   margin-bottom: 35px;
+}
+.link{
+   color: #ffffff;
+   display: inline-block;
+   border-radius: 30px;
+   padding: 10px 30px;
+   background-color: #3056D3;
+
+}
