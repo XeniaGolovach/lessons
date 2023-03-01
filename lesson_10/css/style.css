@@ -1,0 +1,124 @@
+
+body{
+    font-family: "Poppins";
+    font-size:16px;
+    line-height: 1.5;
+}
+
+[class*="__container"]{
+    max-width: 1270px;
+    margin: 0 auto;
+    padding: 0px 15px;
+}
+/* =============================================================================== */
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    min-height: 90px;
+    align-items: center;
+    
+}
+.menu-area__list,
+.socials__list {
+    display: flex;
+    gap:25px; 
+    
+}
+.menu-area__item,
+.socials__item{
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(73, 80, 87, 0.5);
+}
+
+.menu-area__link__current {
+    color: black;
+    border-bottom:2px solid #DDBEA9;
+}
+.menu-area__link:hover,
+.socials__link:hover{
+    color: #495057;
+    border-bottom:2px solid #DDBEA9;
+}
+
+.socials__link-search::after{
+    content: url(../img/search.svg);
+    background: url(../img/line.svg) no-repeat ;
+    padding-left: 20px ;
+}
+
+/* ================================================================== */
+
+.slider-page {
+    padding-bottom: 100px;
+}
+.slider-page__image {
+    max-width: 100%;
+}
+
+
+.page__title{
+    display: flex;
+    justify-content: space-between;
+    min-height: 90px;
+    align-items: center;
+    font-weight: 700;
+}
+
+.page__cards-design { 
+    padding-bottom: 50px;
+}
+.design-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    gap: 30px; 
+}
+
+.design-cards__card {
+    max-width: 383px; 
+    
+}
+.design-cards__date {
+    font-size: 12px;
+    line-height: 20px;
+    color: #495057;
+}
+.design-cards__title {
+    color: #212529;
+    line-height: 25px;
+    font-size: 16px;
+}
+
+.design-cards__card__width{
+  max-width: 65% ;
+}
+/* ============================================================ */
+.footer{
+    background-color: #212529;
+}
+.footer__logo{
+    font-size: 18px;
+    font-weight: 700;
+    color:#F8F9FA ;
+}
+.footer__nav{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom:40px ;
+    border-bottom:1px solid rgba(73, 80, 87, 0.5); ;
+    
+}
+
+.footer__area{
+    padding-top:40px ;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: 500;
+    color: rgba(73, 80, 87, 0.5);
+
+}
