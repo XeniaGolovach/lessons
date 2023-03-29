@@ -17,7 +17,7 @@ body {
 }
 
 [class*="__container"] {
-    max-width: 1240px;
+    max-width: 1230px;
     margin: 0 auto;
     padding: 0 15px;
 
@@ -29,7 +29,19 @@ body {
     justify-content: space-between;
     gap: 20px;
     min-height: 100px; 
-    padding-bottom: 70px;
+    margin-bottom: 70px;
+}
+@media(max-width:890px){
+    .header__container{
+        min-height: 40px; 
+        margin-bottom: 20px;
+    }
+    .page__title h2{
+        font-size: 40px;
+    }
+}
+.header__logo a{
+    display: block;
 }
 
 .menu__list {
@@ -39,16 +51,15 @@ body {
     flex-wrap: wrap;
     align-items: center;
 }
-
-
 .menu__link {
     font-size: 16px;
-    transition: font-weight 0.2s;
+    transition: transform 0.2s, text-shadow 0.2s;
 }
 
 .menu__link:hover,
 .active {
-    font-weight: 600;
+    text-shadow: 0px 0px 1px rgba(51,51,51,1);
+    transform: scale(1.02);
 }
 
 .menu__link-btn {
@@ -68,8 +79,15 @@ body {
     background-color: #D9D9D9;
 
 }
+@media(max-width:510px){
+    .menu__list{
+        column-gap: 30px;
+        row-gap: 1px;
+}
+
+}
 .page__benefits{
-    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 
 .page__title {
@@ -78,23 +96,39 @@ body {
     line-height: 1.4;
     color: #000000;
     text-align: center;
-    padding-bottom:36px ;
+    margin-bottom:36px ;
 }
 
 .page__text {
-    width:520px;
+    max-width:520px;
     color: #000000;  
-    margin: 0 auto;
+    margin: 0 auto ;
     text-align: center;
-    padding-bottom:57px ;
+    margin-bottom: 57px ;
 }
+@media(max-width:890px){
+    .page__benefits{
+        margin-bottom: 30px;
+    }
+    .page__title{
+        
+        margin-bottom: 20px;
+    }
+    .page__title>h2{
+        font-size: 32px;
+    }
+    .page__text{
+        font-size: 15px;
+        margin-bottom: 25px;
+    }
+}
+
 
 .page__image img {
     max-width: 100%;
     margin: 0 auto;
 }
 .achievement {
-    
     padding-bottom: 100px;
 }
 
@@ -107,7 +141,7 @@ body {
 }
 .achievement__headline::before{
     content: url(../img/line.svg);
-    width: 100%;
+    max-width: 100%;
     height: 2px;
     position: absolute;
     left:166px ;
@@ -117,21 +151,22 @@ body {
 .achievement__image img {
     max-width: 100%;
 }
+.achievement__items{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 .achievement__item{
     display: flex;
-    flex-direction:row;
-    flex-wrap: wrap;
+    gap: 120px;
     align-items: center;
-    row-gap: 20px;
-    column-gap: 120px;
-    
 
 }
 .achievement__item:not(:last-child){
     margin-bottom: 40px ;
 }
 .achievement__text-block{
-    width: 334px;
+    flex: 1 1 345px;
     
 }
 .achievement__title {
@@ -144,7 +179,41 @@ body {
 .achievement__text {
     color: #9C9C9C;
 }
-
+.achievement__image{
+    flex: 0 1 746px;
+    align-self: start;
+}
+@media(max-width:950px){
+    .achievement__item{
+        flex-wrap: wrap-reverse;
+        gap:30px;
+    }
+}
+@media(max-width:660px){
+    .achievement__headline::before{
+       content:"";
+    }
+    .achievement__item{
+        gap:20px;
+    }
+    .achievement__item:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .achievement{
+        padding-bottom: 30px;
+    }
+    .achievement__headline{
+        margin-bottom: 20px;
+        
+    }
+    .achievement__title{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .achievement__text{
+        font-size: 13px;
+    }
+}
 .content {
     display: flex;
     flex-direction:row;
@@ -154,8 +223,8 @@ body {
     padding-bottom: 100px;
 }
 .content__text-block {
-    width: 584px;
     padding-bottom: 82px;
+    flex: 0 1 47%;
 }
 .content__title {
     padding-bottom:24px ;
@@ -186,8 +255,47 @@ body {
 .content__images{
     display: flex;
     flex-wrap: wrap;
-    gap: 32px;
+    margin: 0 -15px;
+    row-gap: 32px;
+    column-gap: 32px; 
+    
 }
 .content__img img{
     max-width: 100%;
+}
+@media(max-width:1200px){
+    .content__img{
+        margin: 0 auto;
+}
+}
+@media(max-width:890px){
+    .content__text-block{
+        padding-bottom: 30px;
+    }
+}
+
+@media(max-width:660px){
+    .content{
+        flex-direction: column;
+        row-gap: 2px;
+    }
+    .content__title{
+        padding-bottom: 10px;
+    }
+    .content__text-block {
+        flex: 0 1 80%;
+        padding-bottom: 15px;
+    }
+    .content__text{
+        font-size: 14px;
+    }
+    .content__text p{
+        padding-top: 10px;
+    }
+    .content__row{
+        padding-top: 20px;
+    }
+    .content__images{
+        margin: 0 auto;
+    }
 }
