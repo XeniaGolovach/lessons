@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <div class="wrapper">
+        <header></header>
+        <main class="page">
+            <div class="page__container">
+                <div class="page__form forms">
+                    <div class="forms__title">
+                        <h3>Checkout</h3>
+                    </div>
+                    <div class="forms__subtitle">
+                        There are 3 products in your cart
+                    </div>
+                    <div class="forms__heading">
+                        Billing Details
+                    </div>
+                    <form class="form" action="https://jsonplaceholder.typicode.com/posts" method="post" enctype="multipart/form-data">
+                        <div class="form__line">
+                            <input type="text" autocomplete="off" name="userfname" value="" class="form__input" placeholder="First name*" required tabindex="1">
+                            <input type="text" autocomplete="off" name="userlname" value="" class="form__input" placeholder="Last name*" required tabindex="2">
+                        </div>
+                        <div class="form__line">
+                            <input type="text" autocomplete="off" name="useraddres" value="" class="form__input" placeholder="Address*" required tabindex="3">
+                            <input type="text" autocomplete="off" name="useraddres2" value="" class="form__input" placeholder="Address line 2" tabindex="4">
+                        </div>
+                        <div class="form__country">
+                            <select class="form__items" name="items" tabindex="5">
+                                <option class="form__item" value="1" selected>Country*</option>
+                                <option class="form__item" value="2">Ukraine</option>
+                                <option class="form__item" value="3">Italy</option>
+                                <option class="form__item" value="4">Portugal</option>
+                                <option class="form__item" value="5">Germany</option>
+                            </select>
+                            <input class="form__input" type="text" name="text" tabindex="6" autocomplete="off" required placeholder="City/Town*">
+                        </div>
+                        <div class="form__zip">
+                            <input class="form__input" type="text" name="text" tabindex="7" autocomplete="off" placeholder="Postcode / ZIP*" required >
+                            <input class="form__input" type="tel" name="phone" tabindex="8" autocomplete="off" placeholder="Phone*" required >
+                        </div>
+                        <div class="form__zip">
+                            <input class="form__input" type="text" name="text" tabindex="9" autocomplete="off" placeholder="Postcode / ZIP*" required >
+                            <input class="form__input" type="tel" name="phone" tabindex="10" autocomplete="off" placeholder="Phone*" required >
+                        </div>
+                        <div class="form__holder">
+                            <textarea class="form__area" name="holder" placeholder="Additional information" tabindex="11"></textarea>
+                        </div>
+                        <div class="form__checkbox">
+                            <input class="form__check" tabindex="12" value="yes" type="checkbox" name="checkbox" id="check1" checked>
+                            <label for="check1" class="form__label">Create Account</label>
+                        </div>
+                        <div class="form__checkbox">
+                            <input class="form__check" tabindex="12"  type="checkbox" name="checkbox" id="check2">
+                            <label for="check2" class="form__label">Ship to a different address?</label>
+                        </div>
+                        <div class="form__discount discount">
+                            <h3 class="discount__title">Apply Coupon to get discount!</h3>
+                            <div class="discount__box">
+                                <input class="discount__code" tabindex="13" type="text" name="code" placeholder="Coupon code">
+                                <button class="discount__button" tabindex="14" type="submit">Apply Code</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="shipping">
+            <div class="shipping__container">
+                <div class="shipping__form formship">
+                    <div class="formship__headline">
+                    <h3>Shipping Address</h3>
+                </div>
+                <form class="form2" action="https://jsonplaceholder.typicode.com/posts" method="post" enctype="multipart/form-data">
+                    <div class="form2__line">
+                        <label for="mail">Email Address <span>*</span></label>
+                        <input class="form2__input" type="email" name="mail" id="mail" autocomplete="off" placeholder="roni_cost@example.com" tabindex="15" required > 
+                    </div>
+                    <div class="form2__line">
+                        <label for="pass">Password</label>
+                        <input class="form2__input" type="password" name="password" id="pass" autocomplete="off" placeholder="******************" tabindex="16"> 
+                    </div>
+                    <div class="form2__line">
+                        <label for="code">Zip/Postal Code</label>
+                        <input class="form2__input" type="password" name="code" id="code" autocomplete="off" tabindex="17"> 
+                    </div>
+                    <div class="form2__subtitle" tabindex="18">You already have an account with us. Sign in or continue as guest.</div>
+                    <div class="form2__btns">
+                    <div class="form2__btn" tabindex="19">
+                       <button type="submit">login</button>
+                    </div>
+                    <div class="form2__forgot" tabindex="20">
+                        <a class="form2__link" href="#">Forgot Your Password?</a>
+                    </div>
+                </div>
+                </form>
+                <form class="form2" action="https://jsonplaceholder.typicode.com/posts" method="post" enctype="multipart/form-data">
+                    <div class="form2__line" >
+                        <label for="fname">First Name <span>*</span></label>
+                        <input class="form2__input" type="text" name="fname" id="fname" required tabindex="21">
+                    </div>
+                    <div class="form2__line" >
+                        <label for="lname">Last Name <span>*</span></label>
+                        <input class="form2__input" type="text" name="lname" id="lname" required tabindex="22">
+                    </div>
+                    <div class="form2__line" >
+                        <label for="company">Company</label>
+                        <input class="form2__input" type="text" name="company" id="company" tabindex="23">
+                    </div>
+                    <div class="form2__line" >
+                        <label for="adr">Street Address <span>*</span></label>
+                        <input class="form2__input" type="text" name="address" id="adr" required tabindex="24">
+                    </div>
+                        <div class="form2__empty">
+                            <div class="form2__aside">
+                               <input class="form2__input " type="text" name="address" tabindex="25">
+                             <input class="form2__input " type="text" name="address" tabindex="26"> 
+                            </div>
+                    </div>
+                    
+                    <div class="form2__line" >
+                        <label for="country">Country <span>*</span></label>
+                        <input class="form2__input" type="text" name="country" id="country" tabindex="27" required>
+                    </div>
+                    <div class="form2__states">
+                        <label for="state">State/Province <span>*</span></label>
+                        <select class="form2__items" name="state" id="state" required tabindex="28">
+                            <option class="form2__item" selected value="1">Please select a region, state or province</option>
+                            <option class="form2__item"  value="2">State 1</option>
+                            <option class="form2__item"  value="3">State 2</option>
+                            <option class="form2__item"  value="4">State 3</option>
+                        </select>
+                    </div>
+                    <div class="form2__caption">
+                    <h3>Shipping Methods</h3>
+                </div>
+                <div class="form2__methods">
+                <div class="form2__method1">
+                    <input type="radio" name="method" id="method" checked>
+                    <label for="method">$5.00</label>
+                    <label for="method">Fixed</label>
+                    <label for="method">Flat Rate</label>
+                </div>
+                <div class="form2__method1">
+                    <input type="radio" name="method" id="method" disabled>
+                    <label for="method">$10.00</label>
+                    <label for="method">Table Rate</label>
+                    <label for="method">Best Way</label>
+                </div>
+            </div>
+                <div class="form2__btns row">
+                    <div class="form2__btn ">
+                    <button type="submit">next</button></div>
+                    <div class="form2__back">
+                        <a href="#">Back</a>
+                    </div>
+                </div>
+                </form>
+            </div>
+            </div>
+        </div>
+        </main>
+    </div>
+</body>
+</html>
