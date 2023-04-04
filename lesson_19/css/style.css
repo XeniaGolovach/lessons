@@ -92,6 +92,7 @@
     .categories__item:hover{
         transform:scale(1.05);
     }
+
     .text-area__link-hashtag:hover{
         text-decoration: underline;
     }
@@ -114,6 +115,10 @@
     }
     .categories__item {
         padding-bottom: 45.35%;
+    }
+    .categories {
+        margin-top: 20px;
+        margin-bottom: 30px;
     }
 }
 @media(max-width: 468px){
@@ -264,8 +269,20 @@
 @media(max-width:867.98px){
     .products__items{
         gap: 15px;
+        margin-top: 30px;
+    }
+    .products__container{
+        padding-bottom: 30px;
+        padding-top:30px ;
+    }
+
+}
+@media(max-width:425px){
+    .item-products__text,.item-products__reviews {
+        font-size: 12px;
     }
 }
+
 .trendings__container {
     margin-top: 120px;
     margin-bottom: 120px;
@@ -330,7 +347,19 @@
     transform: scale(1.05);
 }
 }
-
+@media(max-width:767.98px){
+    .trendings__container {
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+    .trendings__content {
+        margin-top:30px
+    }
+    .trendings__reviews{
+        text-align: end;
+        font-size: 12px;
+    }
+}
 .collections {
 }
 .collections__container {
@@ -376,6 +405,15 @@
     font-weight: 700;
     line-height: 1.5;
     color: #3056D3;
+}
+@media(max-width:767.98px){
+    .collections__content {
+        margin-top: 30px;
+    }
+    .collections__container{
+        margin-bottom: 40px;
+    }
+
 }
 .featured-products__container {
     margin-bottom: 120px;
@@ -530,6 +568,20 @@
     .featured-products__item .featured-products__image{
         padding-bottom: 74.57265%;
     }
+    .featured-products__container{
+        margin-bottom: 40px;
+    }
+    .featured-products__discount{
+        font-size:12px ;
+    }
+    .featured-products__headline a{
+        display: block;
+        text-align: center;
+        font-size: 20px;
+    }
+    .featured-products__info{
+        font-size: 12px;
+    }
 }
 .category__container {
     margin-bottom: 120px;
@@ -551,8 +603,20 @@
     transition: transform 0.5s;
 }
 .category__image {
-    margin-bottom: 20px;
-    
+    position: relative;
+    margin-bottom: 20px; 
+}
+.category__img-link{
+    display: block;
+
+}
+.category__image img{
+    /* position: absolute; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
 .category__hashtag {
     font-weight: 600;
@@ -572,6 +636,22 @@
     }
     .category__item:hover {
         transform: scale(1.1);
+    }
+}
+@media(max-width:767.98px){
+    .category__container{
+        margin-bottom: 40px;
+    }
+    .category__content{
+        margin-top: 30px;
+    }
+    .category__items{
+        gap: 15px;
+    }
+}
+@media(max-width:367.98px){
+    .category__items{
+        grid-template-columns: repeat(auto-fill, minmax(260px, 1fr))
     }
 }
 .best-selling__container {
@@ -637,6 +717,36 @@
         color: #3056D3;
     }
 }
+@media(max-width:767.98px){
+    .best-selling__container {
+        margin-bottom: 40px;
+    }
+    .top-title{
+        font-size: 12px;
+    }
+    .best-selling__items{
+        gap: 10px;
+    }
+    .best-selling__title{
+        font-size: 26px;
+    }
+    .best-selling__subtitle{
+        font-size:12px;
+        max-width:350px ;
+    }
+    
+    .best-selling__headline{
+        font-size: 16px;
+    }
+    .best-selling__price{
+        font-size: 14px;
+        text-align: end;
+    }
+
+    .best-selling__content {
+        margin-top: 30px;
+}
+}
 
 /* ============================================================= */
 
@@ -645,7 +755,6 @@
 }
 .designs__items {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(525px, 1fr));
     gap: 32px;
     /* justify-items: center; */
 }
@@ -719,4 +828,36 @@
     line-height: 1.6;
     color: #9C9C9C;
 }
-
+@media(max-width:767.98px){
+    .designs__items {
+        grid-template-columns: 1fr 1fr;
+        }
+        .text-block{
+            grid-template-columns: repeat(1, 1fr);
+        }   
+        .text-block__title{
+            font-size: 16px;
+        }
+        .text-block__paragraph,.text-block__info{
+            font-size: 12px;
+        }
+}
+@media(max-width:547px){
+    .designs__items {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        }
+        .text-block__item {
+            gap: 10px;
+        }
+        .text-block{
+            gap: 15px;
+        }
+        .designs__image-col, .designs__image {
+            
+            padding-bottom: 59.30%;
+        }
+        .designs__item-col {
+            grid-column: span 2;
+}
+}
