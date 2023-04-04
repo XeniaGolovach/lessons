@@ -645,7 +645,7 @@
 }
 .designs__items {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(525px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(525px, 1fr));
     gap: 32px;
     /* justify-items: center; */
 }
