@@ -1001,6 +1001,7 @@ body {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 1%;
+  margin-top: 32px;
   padding-bottom: 70px;
   border-bottom: 3px solid black;
   -webkit-box-flex: 1;
@@ -1012,6 +1013,7 @@ body {
     padding-bottom: 30px;
     border-bottom: 1px solid black;
     font-size: 12px;
+    margin-top: 10px;
   }
 }
 .blog__date {
